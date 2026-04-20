@@ -26,16 +26,6 @@ This portfolio itself is built with simplicity, speed, and zero dependencies in 
 - **CSS3** (Flexbox/Grid layouts, custom variables, animations)
 - **Vanilla JavaScript** (ES6+, DOM manipulation)
 
-## ⚙️ Run Locally
-Want to test this out on your machine?
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/vinodkumarjaipal/vinodkumarjaipal.github.io.git](https://github.com/vinodkumarjaipal/vinodkumarjaipal.github.io.git)
-   ```
-2. Open the project folder in your favorite code editor (e.g., VS Code).
-3. Start a local development server (Using the "Live Server" extension is recommended).
-4. Open `index.html` in your browser.
-
 ## 📫 Connect with Me
 I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
 
