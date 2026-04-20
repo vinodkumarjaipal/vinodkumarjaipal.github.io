@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinodkumarjaipal.github.io/sitemap.xml

@@ -1,0 +1,12 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+
+# Logs
+*.log
+
+# Dependencies (future-proof)
+node_modules/

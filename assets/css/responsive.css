@@ -1,0 +1,170 @@
+/* responsive.css */
+
+/* TABLET */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .hero {
+        padding: 110px 6% 70px;
+    }
+
+    .glow-text {
+        font-size: clamp(2.2rem, 5vw, 3.2rem);
+    }
+
+    .glass-section {
+        padding: 40px;
+        width: min(100%, calc(100% - 28px));
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-outcomes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .contact-box {
+        gap: 16px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    /* MOBILE MENU (Sidebar) */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(82vw, 320px);
+        height: 100vh;
+        background: rgba(5, 5, 16, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        padding: 90px 20px 40px;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 20px rgba(0, 247, 255, 0.1);
+        z-index: 999;
+    }
+
+    /* Jab button click hoga toh yeh class JS ke zariye add hogi */
+    .nav-links.active {
+        right: 0;
+        /* Screen ke andar aayega */
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .site-logo {
+        margin-right: auto;
+    }
+
+    .hero {
+        padding: 110px 5% 60px;
+    }
+
+    .glow-text {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-outcomes {
+        grid-template-columns: 1fr;
+        margin-top: 24px;
+    }
+
+    .outcome-item {
+        text-align: center;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .glass-section {
+        padding: 30px 20px;
+        width: min(100%, calc(100% - 20px));
+        margin: 72px auto;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-list li {
+        align-items: flex-start;
+    }
+
+    .edu-points,
+    .cert-points,
+    .exp-points {
+        gap: 6px;
+        padding-left: 16px;
+    }
+
+    .project-meta,
+    .edu-meta,
+    .cert-meta,
+    .exp-meta,
+    .cert-date {
+        font-size: 0.84rem;
+    }
+
+    .hamburger-btn {
+        display: block;
+        order: 3;
+    }
+
+    .theme-btn {
+        order: 2;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 24px;
+        width: 100%;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-link,
+    .projects-card a,
+    .btn-outline,
+    .btn-neon {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-links {
+        width: 100%;
+    }
+
+}

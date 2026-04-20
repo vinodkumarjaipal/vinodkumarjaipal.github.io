@@ -1,0 +1,110 @@
+/* sections.css */
+
+/* COMMON SECTION SPACING */
+section {
+    position: relative;
+    scroll-margin-top: 100px;
+}
+
+/* SECTION FADE-IN */
+.glass-section {
+    position: relative;
+}
+
+html.js .glass-section.reveal-ready {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.glass-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SECTION DIVIDER LINE */
+.glass-section::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-field label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(234, 234, 255, 0.55);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+    border-color: var(--neon-blue);
+    outline: 2px solid var(--neon-blue);
+    outline-offset: 2px;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Form Button Alignment */
+.contact-form .btn-neon {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-status {
+    min-height: 1.4em;
+    margin: -6px 0 0;
+    font-size: 0.95rem;
+    color: var(--neon-blue);
+    opacity: 0.95;
+}
